@@ -30,7 +30,6 @@ class DemandaDetail(generics.RetrieveUpdateDestroyAPIView):
     def get_queryset(self, *args, **kwargs):
         return Demanda_de_peça.objects.all().filter(anunciante=self.request.user)
 
-
 @api_view(['POST'])
 def demandaUpdate(request, pk):
 	demanda = Demanda_de_peça.objects.get(id=pk)
