@@ -1,0 +1,791 @@
+{
+	"info": {
+		"_postman_id": "c63aa7b2-b44c-4a88-9128-0a9d1f053464",
+		"name": "Collection",
+		"description": "Documentação Endpoints da api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/api/demanda-detail/<Id>",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/demanda-detail/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"demanda-detail",
+								""
+							]
+						},
+						"description": "Detalhes de uma demanda de peça"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/demanda/<Id>",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-CSRFToken",
+										"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token adf9889d091ea92e7dcc2e30aaceadfc2fce6762",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/demanda-detail/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"demanda-detail",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Dec 2021 15:23:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "201"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"anunciante\": \"admin\",\n    \"descrição\": \"3 Caixas de Mecanismo\",\n    \"rua\": \"Rua Siqueira Campos 127\",\n    \"cidade\": \"Aliança\",\n    \"estado\": \"Pernambuco\",\n    \"cep\": 55890970,\n    \"telefone\": \"+558724295343\",\n    \"status\": \"Aberta\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/demanda-list/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token f844f1d9a0cdb75d378c98ae1402038fa51816de",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/demanda-list/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"demanda-list",
+								""
+							]
+						},
+						"description": "Listar Demandas de Peças"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/demanda-list/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-CSRFToken",
+										"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token adf9889d091ea92e7dcc2e30aaceadfc2fce6762",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/demanda-list/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"demanda-list",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"id\": 1,\r\n    \"anunciante\": \"admin\",\r\n    \"descrição\": \"3 Caixas de Mecanismo\",\r\n    \"rua\": \"Rua Siqueira Campos 127\",\r\n    \"cidade\": \"Aliança\",\r\n    \"estado\": \"Pernambuco\",\r\n    \"cep\": 55890970,\r\n    \"telefone\": \"+558724295343\",\r\n    \"status\": \"Aberta\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/api-token-auth/",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-token-auth/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-token-auth",
+								""
+							]
+						},
+						"description": "Fazer Login utilizando username e password para retornar o token de acesso."
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api-token-auth/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-CSRFToken",
+										"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api-token-auth/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api-token-auth",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\"token\": \"adf9889d091ea92e7dcc2e30aaceadfc2fce6762\"}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/demanda-list/",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/demanda-list/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"demanda-list",
+								""
+							]
+						},
+						"description": "Criar demanda de peças"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/demanda-create/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-CSRFToken",
+										"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token f844f1d9a0cdb75d378c98ae1402038fa51816de",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "descrição",
+											"value": "3 Caixas de Mecanismo",
+											"type": "text"
+										},
+										{
+											"key": "rua",
+											"value": "Rua Siqueira Campos 127",
+											"type": "text"
+										},
+										{
+											"key": "cidade",
+											"value": "Aliança",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "Pernambuco",
+											"type": "text"
+										},
+										{
+											"key": "cep",
+											"value": "55890970",
+											"type": "text"
+										},
+										{
+											"key": "telefone",
+											"value": "+55872429-5343",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/demanda-list/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"demanda-list",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Dec 2021 16:06:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "201"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"anunciante\": \"admin\",\n    \"descrição\": \"3 Caixas de Mecanismo\",\n    \"rua\": \"Rua Siqueira Campos 127\",\n    \"cidade\": \"Aliança\",\n    \"estado\": \"Pernambuco\",\n    \"cep\": 55890970,\n    \"telefone\": \"+558724295343\",\n    \"status\": \"Aberta\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/demanda-update/<Id>",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/demanda-update/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"demanda-update",
+								""
+							]
+						},
+						"description": "Editar uma demanda de peça"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/demanda-update/<Id>",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-CSRFToken",
+										"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token f844f1d9a0cdb75d378c98ae1402038fa51816de",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "descrição",
+											"value": "2 Caixas de Mecanismo",
+											"type": "text"
+										},
+										{
+											"key": "rua",
+											"value": "Rua Siqueira Campos 127",
+											"type": "text"
+										},
+										{
+											"key": "cidade",
+											"value": "Aliança",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "Pernambuco",
+											"type": "text"
+										},
+										{
+											"key": "cep",
+											"value": "55890970",
+											"type": "text"
+										},
+										{
+											"key": "telefone",
+											"value": "+55872429-5343",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/demanda-update/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"demanda-update",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Dec 2021 16:21:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "201"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"anunciante\": \"admin\",\n    \"descrição\": \"2 Caixas de Mecanismo\",\n    \"rua\": \"Rua Siqueira Campos 127\",\n    \"cidade\": \"Aliança\",\n    \"estado\": \"Pernambuco\",\n    \"cep\": 55890970,\n    \"telefone\": \"+558724295343\",\n    \"status\": \"Aberta\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/api/demanda-delete/<Id>",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/demanda-delete/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"demanda-delete",
+								""
+							]
+						},
+						"description": "Deletar uma demanda de peça"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/demanda-delete/<Id>",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-CSRFToken",
+										"value": "6aVJEWk48SThDAtwk6rvwSc9D71Q1e9iaReAZgC730fjFPoQAUrMbSRUgfWcDsCH",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Token f844f1d9a0cdb75d378c98ae1402038fa51816de",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/demanda-delete/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"demanda-delete",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Dec 2021 16:23:37 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, DELETE"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "\"Demanda foi deletada com sucesso!\""
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

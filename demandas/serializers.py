@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
-from anuncios.models import Demanda_de_peça
+from .models import Demanda_de_peça
 
 
 class Demanda_de_peça_Serializer(ModelSerializer):
