@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
-from droids import urls as droids_urls
+from anuncios import urls as anuncios_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/',include(droids_urls)),
+    path('api/',include(anuncios_urls)),
 ]
 
 urlpatterns += [
